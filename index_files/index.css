@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background: #000;
+  background-image: url(../images/bg-black.png);
+  background-attachment: fixed;
+  background-size: contain;
+
+}
+.bora{
+  background-image: url(../images/bg-red.png);
+  background-attachment: fixed;
+  background-size: contain;
+
+}
+
+.mw100{
+  max-width: 100%;
+}
+/* Color Text*/
+.text-red{
+  color: #ff0030;
+}
+.text-black{
+  color: #000;
+}
+
+/* Back color */
+.bg-red{
+  background-color: #c1072a;
+}
+
+/* Size Text */
+.text-14{
+  font-size: 14px;
+}
+.text-24{
+  font-size: 24px;
+}
+.text-30{
+  font-size: 30px;
+}
+.text-60{
+  font-size: 60px;
+}
+.text-72{
+  font-size: 72px;
+}
+
+
+
+
+.text-80{
+  font-size: 80px;
+}
+
+.text-35{
+  font-size: 35px;
+}
+.text-36{
+  font-size: 36px;
+}
+
+
+/* Peso Fonte */
+.tw400{
+  font-weight: 400;
+}
+.tw500{
+  font-weight: 500;
+}
+.tw700{
+  font-weight: 700;
+}
+.tw800{
+  font-weight: 800;
+}
+
+/* Espaçamento Linha */
+.theight{
+  line-height: normal;
+}
+
+/* Espaçamento Letras */
+.ts1n{
+  letter-spacing: -1px;
+}
+.ts5n{
+  letter-spacing: -5px;
+}
+.ts2{
+  letter-spacing: 2px;
+}
+
+/* rounded */
+.rounded-10{
+  border-radius: 10px;
+}
+.rounded-l-10{
+  border-radius: 10px 0 0 10px;
+}
+.rounded-r-10{
+  border-radius: 0 10px 10px 0;
+}
+.rounded-t-10{
+  border-radius: 10px 10px 0 0;
+}
+.rounded-b-10{
+  border-radius: 0 0 10px 10px;
+}
+
+.cta{
+  transition: width 2s, height 2s;
+  width: 800px;
+  height: 100px;
+  background: red;
+
+}
+.cta:hover{
+
+ width: 50%;
+height: 50%;
+
+}
+
+.box-produtos{
+  height: 306px;
+  width: auto;
+  position: relative;
+  background-image: url("../images/produtos.webp");
+  background-repeat: repeat-x;
+  animation: mymove 50s infinite linear;
+  background-size: cover;
+ 
+  border-radius: 5px;
+  border: solid 10px white;
+}
+
+.box-wpp{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #19ae7b;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 10px;
+  padding: 30px 10px;
+  border: solid 4px rgba(255, 255, 255, 0.2);
+  z-index:9999;
+}
+.ico-wpp{
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.txt-wpp{
+  color: white;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 400;
+  margin:0px;
+}
+
+@keyframes mymove {
+  0% {
+    background-position: -1920px center;
+}
+100% {
+    background-position: 0 center;
+}
+}
+
+@media screen and (max-width: 450px) {
+
+  .text-24{
+    font-size: 17px;
+  }
+  .text-30{
+    font-size: 19px;
+  }
+  .text-60{
+    font-size: 32px;
+  }
+  .ts5n{
+    letter-spacing: -2px;
+  }
+
+}

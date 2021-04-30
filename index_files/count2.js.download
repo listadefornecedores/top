@@ -1,0 +1,36 @@
+function countdownn(){
+    var noww = new Date();
+                // Altere a data do seu evento aqui
+    var eventDatee = new Date("Nov 14, 2030 00:00:00");
+
+    var currentTiimee = noww.getTime();
+    var eventTimee = eventDatee.getTime();
+
+    var remTimee = eventTimee - currentTiimee;
+
+    // calculando o dia, hora, minuto e segundo
+    //   var d = Math.floor(remTimee / (1000 * 60 * 60 * 24));
+    //   var h = Math.floor((remTimee % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var mm = Math.floor((remTimee % (1000 * 60 * 60)) / (1000 * 60));
+      var ss = Math.floor((remTimee % (1000 * 60)) / 1000);
+
+    // document.getElementById("days").textContent = d;
+    // document.getElementById("days").innerText = d;
+    // document.getElementById("hours").textContent = h;
+    document.getElementById("minutess").textContent = mm;
+    document.getElementById("secondss").textContent = ss;
+
+    setTimeout(countdownn, 1000);
+    
+    // Verifica se acabou o período do evento
+     if (remTimee < 0) {
+      clearInterval(countdownn);
+      //document.getElementById("demogrande").innerHTML = "FIM";
+    //   document.getElementById("days").innerHTML = " ";
+    //   document.getElementById("hours").innerHTML = " ";
+      document.getElementById("minutess").innerHTML = " ";
+      document.getElementById("secondss").innerHTML = "<small>FIM</small>"; 
+      } 
+  }
+
+  countdownn();
